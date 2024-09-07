@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous%20Pro:700|Anonymous%20Pro:400');
+
+@font-face {
+  font-family: Network;
+  src: url(NetworkFreeVersion.ttf);
+}
+
+body {
+  font-family: 'Anonymous Pro';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Anonymous Pro';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+:root {
+--text: #ffffff;
+--background: #272727;
+--background-2: #181818;
+--primary: #242424;
+--secondary: #8e1010;
+--accent: #faca19;
+}
+
+body {
+margin: 0;
+background: var(--background-2);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8rem;
+    margin: 0 5rem;
+    z-index: 2;
+}
+
+main div {
+  display: flex;
+}
+
+.MainBar {
+/*   background: var(--background); */
+  position:fixed;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  z-index: 9997;
+  align-items: center;
+  padding-left: 2rem;
+  border-bottom: 1px solid #484848;
+  margin-bottom: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 0 0 8px 8px;
+
+  /* From https://css.glass */
+  background: rgba(39, 39, 39, 0.5);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(39, 39, 39, 0.19);
+}
+
+.Textmain {
+  color: var(--text);
+  border-right: 1px solid #484848;
+  width:10rem;
+}
+
+.linkT {
+  color: var(--text);
+  margin: 0;
+  height: 100%;
+  text-decoration: none;
+}
+
+.link {
+  height: 100%;
+  display: flex;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.Home {
+/*   background: transparent; */
+  width: 100%;
+  margin-top: 8rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 2rem;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(0, 0, 0, 0.19);
+}
+
+.background {
+}
+
+.wallpaper {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: -199;
+  background: var(--background-2);
+  margin: 0;
+  width: 100%;
+/*   filter: blur(3px); */
+}
+
+header {
+  position: static;
+}
+
+.NameTag {
+  font-family: 'Network';
+  font-weight:400;
+}
+
+.About-Me {
+  background: transparent;
+  width: 100%;
+  margin: 8rem;
+  color: #FFFFFF;
+  align-items:center;
+  flex-direction: column;
+  justify-content:center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.infotext {
+  align-content:center;
+  justify-content:center;
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+}
+
+.infoimg {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.infoimgset {
+  width: 50vw;
+  height: auto;
+}
+
+.PLink {
+  color:#FFFFFF;
+}
+
+.PLink:hover {
+  color:var(--secondary);
+}
+
+
