@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: Network;
-  src: url(sNetworkFreeVersion.ttf);
+  src: url(./NetworkFreeVersion.ttf);
 }
 
 body {
@@ -90,7 +90,7 @@ main div {
 
 .linkT {
   color: var(--text);
-  margin: 0;
+  margin: 0.3rem;
   height: 100%;
   text-decoration: none;
 }
@@ -100,6 +100,13 @@ main div {
   display: flex;
   margin-right: 1rem;
   text-decoration: none;
+  border: 1px solid rgba(72, 72, 72, 0%);
+  border-radius: 8px;
+  transition: border-color ease 0.5s;
+}
+
+.link:hover {
+  border-color: rgba(72, 72, 72, 100%);
 }
 
 .Home {
@@ -191,4 +198,23 @@ header {
   color:var(--secondary);
 }
 
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
 
+.listitems {
+  color: var(--text);
+  height: 100%;
+  text-decoration: underline;
+  margin:0.3rem;
+}
+
+.listOL{
+  list-style:inside;
+  list-style-type: circle;
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+}
