@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../index_files/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro To Visual Communications:Line</title>
+</head>
+
+<div class="wallpaper" style="overflow:initial;position:sticky;">
+    <div style="position:absolute;left:0%;right:0%;">
+        <section class="spikes spikesR" style="height:1000px;background:red;"></section>
+        <section class="spikes spikesB" style="height:1000px;background:blue;"></section>
+        <section class="spikes spikesG" style="height:1000px;background:Green;"></section>
+        <section class="spikes spikesY" style="height:1000px;background:Yellow;"></section>
+        <section class="spikes spikesO" style="height:1000px;background:Orange;"></section>
+        <section class="spikes spikesP" style="height:1000px;background:Purple;"></section>
+        <section class="spikes spikesW" style="height:1000px;background:White;"></section>
+        <section style="height:1000px;background:Black;"></section>
+        </div>
+<body>
+    <nav class="MainBar">
+    <div>
+    <div class="Textmain"><p class="main">Intro To Visual Communications</p></div>
+    </div><div class="links">
+    <div class="link"><a class="linkT" href="../linkindex.html"><h5 class="linkT">Back</h5></a></div>
+    </div>
+    </nav>
+
+    <style>
+    .SubHome {
+    display:flex;
+    flex-direction:row;
+    }
+
+</style>
+ <style>
+.vl {
+  border-left: 2px solid white;
+  height: 125px;
+  padding-right: 16px;
+}
+</style>
+<script>
+const containers = gsap.utils.toArray(".ScrollContainer");
+containers.forEach((container) => {
+  gsap.to(container, {
+    autoAlpha: 1,
+    ease: "power1.in",
+    scrollTrigger: {
+      trigger: container,
+      pin: true,
+      scrub: true
+    }
+  });
+});
+</script>
+<style>
+.ScrollContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 8rem;
+  visibility: hidden;
+}
+</style>
+    <main>
+    <div class="Home" style="position:sticky;">
+    <h2 class="infotext">Color Lab</h2>
+    </div>
+    <div class="Home" style="margin-top:2rem;width:50vw;"><h2 class="infotext">Red</h2>
+    <p class="infotext">Of a color at the end of the spectrum next to orange and opposite violet, as of blood, fire, or rubies.</p></div>
+        <div class="Home" style="margin-top:500px;width:50vw;"><h2 class="infotext">Blue</h2><p class="infotext">Of a color intermediate between green and violet, as of the sky or sea on a sunny day.</p></div>
+        <div class="Home" style="margin-top:600px;width:50vw;"><h2 class="infotext">Green</h2><p class="infotext">Of the color between blue and yellow in the spectrum; colored like grass or emeralds.</p></div>
+        <div class="Home" style="margin-top:600px;width:50vw;"><h2 class="infotext">Yellow</h2><p class="infotext">Of the color between green and orange in the spectrum, a primary subtractive color complementary to blue; colored like ripe lemons or egg yolks.</p></div>
+        <div class="Home" style="margin-top:700px;width:50vw;"><h2 class="infotext">Orange</h2><p class="infotext">Reddish yellow in color.</p></div>
+        <div class="Home" style="margin-top:600px;width:50vw;"><h2 class="infotext">Purple</h2><p class="infotext">A color intermediate between red and blue..</p></div>
+        <div class="Home" style="margin-top:600px;width:50vw;"><h2 class="infotext" style="color:Black;">White</h2><p class="infotext" style="color:Black;">Of the color of milk or fresh snow, due to the reflection of most wavelengths of visible light; the opposite of black.</p></div>
+        <div class="Home" style="margin-top:700px;width:50vw;"><h2 class="infotext">Black</h2><p class="infotext">Of the very darkest color owing to the absence of or complete absorption of light; the opposite of white.</p></div>
+    </main>
+    <style>
+    .spikes {
+  position: relative;
+  height: 50vh;
+}
+
+.spikesR::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -0%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 15px;
+  background-size: 15px 100%;
+  background-image: linear-gradient(135deg, Red 25%, transparent 25%), linear-gradient(225deg, Red 25%, transparent 25%);
+  background-position: 0 0;
+}
+.spikesG::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -0%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 15px;
+  background-size: 15px 100%;
+  background-image: linear-gradient(135deg, Green 25%, transparent 25%), linear-gradient(225deg, Green 25%, transparent 25%);
+  background-position: 0 0;
+}
+.spikesB::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -0%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 15px;
+  background-size: 15px 100%;
+  background-image: linear-gradient(135deg, Blue 25%, transparent 25%), linear-gradient(225deg, Blue 25%, transparent 25%);
+  background-position: 0 0;
+}
+.spikesY::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -0%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 15px;
+  background-size: 15px 100%;
+  background-image: linear-gradient(135deg, Yellow 25%, transparent 25%), linear-gradient(225deg, Yellow 25%, transparent 25%);
+  background-position: 0 0;
+}
+.spikesO::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -0%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 15px;
+  background-size: 15px 100%;
+  background-image: linear-gradient(135deg, Orange 25%, transparent 25%), linear-gradient(225deg, Orange 25%, transparent 25%);
+  background-position: 0 0;
+}
+.spikesP::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -0%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 15px;
+  background-size: 15px 100%;
+  background-image: linear-gradient(135deg, Purple 25%, transparent 25%), linear-gradient(225deg, Purple 25%, transparent 25%);
+  background-position: 0 0;
+}
+.spikesBL::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -0%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 15px;
+  background-size: 15px 100%;
+  background-image: linear-gradient(135deg, Black 25%, transparent 25%), linear-gradient(225deg, Black 25%, transparent 25%);
+  background-position: 0 0;
+}
+.spikesW::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -0%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 15px;
+  background-size: 15px 100%;
+  background-image: linear-gradient(135deg, White 25%, transparent 25%), linear-gradient(225deg, White 25%, transparent 25%);
+  background-position: 0 0;
+}
+</style>
+</body></html>
